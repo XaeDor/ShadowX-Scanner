@@ -172,3 +172,34 @@ If you like this project:
 🍴 Fork it
 
 🐞 Open issues / PRs
+
+---
+
+## 📜 License & Copyright
+
+Copyright © 2026 **XaeDor**
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this tool, provided the original
+copyright notice and license are included.
+
+---
+
+## ⚠️ Legal Disclaimer
+
+ShadowX-Scanner is intended **ONLY** for:
+- Educational purposes
+- Learning web security
+- Authorized penetration testing
+- Bug bounty programs
+- Labs / CTF environments
+
+🚫 **Do NOT use this tool on systems you do not own or have explicit permission to test.**
+
+The author (**XaeDor**) is **NOT responsible** for:
+- Illegal usage
+- Damage caused
+- Misuse of this tool
+
+Use responsibly and ethically.
+
