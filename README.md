@@ -1,4 +1,4 @@
-🕷️ ShadowX-Scanner
+ 🕷️ ShadowX-Scanner
 
 ShadowX-Scanner is a modular web vulnerability scanner designed for learning, labs, CTFs, and bug bounty practice.
 It combines static crawling, JavaScript-based crawling, forced endpoint discovery, and multiple vulnerability engines in a safe & controllable way.
@@ -54,10 +54,13 @@ ShadowX-Scanner/
 
 🛠️ Installation
 1️⃣ Clone Repository
+
 git clone https://github.com/XaeDor/ShadowX-Scanner.git
+
 cd ShadowX-Scanner
 
 2️⃣ Install Python Dependencies
+
 pip install -r requirements.txt
 
 3️⃣ (Optional but Recommended) Install Playwright
