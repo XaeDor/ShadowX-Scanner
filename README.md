@@ -9,8 +9,11 @@ Scan only owned targets, labs, or platforms that explicitly allow testing.
 ✨ Features
 
 ✔ Static HTML crawler
+
 ✔ JavaScript crawler (Playwright-powered)
+
 ✔ Forced endpoint discovery
+
 ✔ Vulnerability engines:
 
 SQL Injection
@@ -26,33 +29,58 @@ Open Redirect
 IDOR
 
 ✔ Safe Mode (low & slow scanning)
+
 ✔ Aggressive Mode (labs / CTF only)
+
 ✔ CLI-controlled limits (URLs, delay, threads)
+
 ✔ Clean Ctrl+C handling
+
 ✔ Modular & extensible architecture
 
 📁 Project Structure
+
 ShadowX-Scanner/
+
 │
+
 ├── main.py
+
 ├── crawler.py
+
 ├── js_crawler.py
+
 ├── context.py
+
 ├── output.py
+
 │
+
 ├── engines/
+
 │   ├── sqli.py
+
 │   ├── xss.py
+
 │   ├── lfi.py
+
 │   ├── ssrf.py
+
 │   ├── redirect.py
+
 │   ├── idor.py
+
 │   └── forced_endpoints.py
+
 │
+
 ├── requirements.txt
+
 └── README.md
 
+
 🛠️ Installation
+
 1️⃣ Clone Repository
 
 git clone https://github.com/XaeDor/ShadowX-Scanner.git
@@ -68,6 +96,7 @@ pip install -r requirements.txt
 Required for JavaScript-heavy websites.
 
 pip install playwright
+
 playwright install chromium
 
 
@@ -76,27 +105,39 @@ If Playwright is not installed, ShadowX will still work using static crawling.
 🚀 Usage
 
 Basic Scan
+
 python3 main.py -d example.com
 
 Limit URLs
+
 python3 main.py -d example.com -u 20
 
 Safe Mode (Recommended for real websites)
+
 python3 main.py -d example.com --safe
 
 Aggressive Mode (CTF / LAB ONLY)
+
 python3 main.py -d testphp.vulnweb.com --aggressive
 
 Delay Control
+
 python3 main.py -d example.com --delay 2
 
 🧾 CLI Options
+
 Option	Description
+
 -d, --domain	Target domain
+
 -u, --max-urls	Max URLs to scan
+
 -t, --threads	Concurrent threads
+
 --delay	Delay between requests
+
 --safe	Low & slow scanning
+
 --aggressive	Labs / CTF only
 
 Run:
